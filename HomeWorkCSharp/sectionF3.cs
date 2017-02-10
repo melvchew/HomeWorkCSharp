@@ -37,13 +37,21 @@ namespace HomeWorkCSharp
             for (int i = 0; i <  4; i++) 
             {
                 double total = 0; // this finds the average score of each subject
+                double sum = 0 ; // sum of the (x[i] -M)
                 for (int j = 0; j < 12; j++)
                 {
                     total = total + marks[j,i];
+                    
                 }
-                Console.WriteLine("The class average is {0:0.##} for subject {1}", total / 12, i);
-            }
+                Console.WriteLine("The class average is {0:0.##} for subject {1}", total / 12, i+1);
+                for (int j = 0; j < 12; j++)
+                {
+                    sum = sum + Math.Pow((marks[j, i] - (total / 12)),2);
 
+                }
+                Console.WriteLine("The class variance is {0} for subject {1}", Math.Sqrt(sum/12), i+1);
+            }
+           
             //compute the standard deviation of marks for each subjects
 
             for (int i = 0; i < 4; i++)
@@ -55,7 +63,7 @@ namespace HomeWorkCSharp
                     
                 }
                 double average = total / 12; //can try to GetLength
-           /*     double variance = 0;
+           /*     double variance = 0;// variance  = { (sum of x[i] - M)^2/N}
                 double sum = 0;
                 for (int h = 0; h <12; h++)
                 for(int h = 0; h<4; h++)
