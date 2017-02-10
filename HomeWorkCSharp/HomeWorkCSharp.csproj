@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>HomeWorkCSharp.sectionG4</StartupObject>
+    <StartupObject>HomeWorkCSharp.sectionH</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -62,6 +62,7 @@
     <Compile Include="sectionF3.cs" />
     <Compile Include="sectionG.cs" />
     <Compile Include="sectionG4.cs" />
+    <Compile Include="sectionH.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

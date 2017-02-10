@@ -36,7 +36,7 @@ namespace HomeWorkCSharp
                     }
 
                 }
-                for (int i = 1; i < prog.GetLength(0); i++) //use another for loop to do printing of name and marks
+                for (int i = 0; i < prog.GetLength(0); i++) //use another for loop to do printing of name and marks
                 {
                     Console.WriteLine("{0}\t{1}", prog[i, 0], prog[i, 1]);
                 }
@@ -63,7 +63,7 @@ namespace HomeWorkCSharp
                     }
 
                 }
-                for (int i = 1; i < prog.GetLength(0); i++) //use another for loop to do printing of name and marks
+                for (int i = 0; i < prog.GetLength(0); i++) //use another for loop to do printing of name and marks
                 {
                     Console.WriteLine("{0}\t{1}", prog[i, 0], prog[i, 1]);
                 }
