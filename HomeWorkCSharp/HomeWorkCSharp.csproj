@@ -50,6 +50,7 @@
     <Compile Include="Day4Quiz.cs" />
     <Compile Include="Day5Quiz.cs" />
     <Compile Include="Day6.cs" />
+    <Compile Include="GitHubTest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sectionIQ2.cs" />
